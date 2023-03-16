@@ -1,0 +1,96 @@
+
+
+body {
+  margin: 50px;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10 px;
+
+}
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 25px 0;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  border-right: 5px solid blue;
+  padding-right: 10px;
+  
+}
+
+.page-section > div {
+  flex: 0 0 77%
+}
+
+.flex-container {
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.flexItem {
+
+  display: flex;
+  text-decoration: none;
+  align-items: flex-end;
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50%-1em);
+
+}
+
+.flexItem:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+
+
+
