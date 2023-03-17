@@ -16,13 +16,24 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 20px 5px 00px;
-  
+  padding: 10px 10px 5px 00px;
+  height: 70px;
+  background-color:rgb(218, 151, 151);
+  color:brown
+
 }
 
 header h1 {
   margin: 0;
   padding: 5px 1% 5px 6%;
+  
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10 px;
+
 }
 
 
@@ -38,51 +49,40 @@ header h1 {
 }
 
     
-.banner div {
+.hero-banner {
   flex: 0 0 100%;
   display: flex;
   flex-direction: column;
   
 }
       
+
+
+.hero-banner h2 {
+  font-size: 30px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .photo {
   background-image: url("./Images/Musleha\ Pic.jpg");
   background-size: cover;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
+  position: relative;
+  top: 100px;
+  bottom: 20px;
+  left: 50px;
   /* border: 1px solid var(--color1); */
 }  
-
   
-/* 
-}
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+  /* Style the main content */
 
-p {
-  margin: 0;
-}
-
-
-
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-nav a {
-  text-decoration: none;
-  margin-right: 10px;
-  padding: 5px 10 px;
-
+main {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .page-wrapper {
@@ -91,35 +91,53 @@ nav a {
   margin-right: auto;
 }
 
+p {
+  margin-top: 50px;
+}
+
+
 .page-section {
+  margin: 50px 0;
+  padding: 10px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: stretch;
-  margin: 25px 0;
+  justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section h2 {
   flex: 0 0 20%;
   text-align: right;
-  border-right: 5px solid blue;
   padding-right: 10px;
-  
-}
+  font-size: 4vw;
+  line-height: 1.1;
+  border-right: 10px solid rgb(78, 42, 78)
+} 
 
-.page-section > div {
-  flex: 0 0 77%
+.page-section div {
+  flex: 0 0 77%;
+    
 }
 
 .flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+}
+
+.flex-container > div {
   display: flex ;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
-.flexItem {
+.flex-item:first-child {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.flex-item {
 
   display: flex;
   text-decoration: none;
@@ -130,7 +148,4 @@ nav a {
 
 }
 
-.flexItem:first-child {
-  min-height: 400px;
-  flex-basis: 100%;
-} */
+
