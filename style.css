@@ -14,9 +14,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  padding: 10px 10px 5px 00px;
+  padding: 1rem;
   height: 70px;
   background-color:rgb(218, 151, 151);
   color:brown
@@ -25,14 +24,25 @@ header {
 
 header h1 {
   margin: 0;
-  padding: 5px 1% 5px 6%;
+  font-size: 32px;
   
 }
+
+nav {
+  display: flex;
+  width: 50%;
+  font-size: 24px;
+  justify-content:right;
+  align-items: center;
+  
+}  
+
 
 nav a {
   text-decoration: none;
   margin-right: 10px;
-  padding: 5px 10 px;
+  padding: 5px 10px;
+  border-bottom: 6px solid rgb(78, 42, 78);
 
 }
 
@@ -75,7 +85,7 @@ nav a {
   top: 100px;
   bottom: 20px;
   left: 50px;
-  border: 1px solid purple
+  border: 1px solid rgb(78, 42, 78);
 }  
   
   /* Style the main content */
@@ -121,7 +131,6 @@ p {
 }
 
 .flex-container {
-  /* background-color: beige; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -130,28 +139,7 @@ p {
   
 }
 
-.flex-item:first-child {
-  min-height: 500px;
-  flex-basis: 100%;
-}
-
-
-.flex-container > div {
-  display: flex ;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
 .flex-item {
-
-  /* display: flex;
-  text-decoration: none;
-  align-items: flex-end;
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50%-1em); */
-
   background-size:100%;
   background-blend-mode:overlay;
   display: flex;
@@ -160,12 +148,71 @@ p {
   color: #333;
   text-align: left;
   text-decoration: none;
-  min-height: 200px;
-  max-height: 2000px;
+  min-height: 300px;
+  max-height: 500px;
   width: calc(50% - 20px);
   margin-bottom: 20px;
   border: 3px solid #e09fcd;
   
 }
 
+.flex-item:first-child {
+  min-height: 500px;
+  flex-basis: 100%;
+}
+
+/* Style the contact section */
+
+address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+address a{
+  background-color: #DA9797
+}
+
+.contact a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1176px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .page-section {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+  .page-section h2 {
+    flex: 0 0 100%;
+    border-right: 0px solid transparent;
+    border-bottom: 10px solid rgb(78, 42, 78);
+    text-align: center;
+  }
+
+  .page-section div {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+
+}
+
+  .section h2 {
+    border-right: none;
+    border-bottom: 4px solid #DA9797;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
 
