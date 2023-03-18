@@ -8,7 +8,7 @@ Built a portfolio page, which I will add to as I learn new skills.
 
 ## Deployed Application
 
-https://musleha1.github.io/Responsive-Portfolio/
+https://github.com/Musleha1/First-Responsive-Portfolio
 
 ## Usage
 
