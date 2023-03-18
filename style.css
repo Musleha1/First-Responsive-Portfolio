@@ -218,6 +218,13 @@ address a{
     justify-content: center;
     text-align: center;
   }
+
+
+  .sections h2,
+  .sections div {
+    flex: 0 0 100%;
+  }
+
   .page-section {
   margin: 0 auto;
   padding: 1rem;
@@ -234,16 +241,4 @@ address a{
     flex: 0 0 100%;
     text-align: center;
   }
-
-
 }
-
-  .section h2 {
-    border-right: none;
-    border-bottom: 4px solid #DA9797;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-
